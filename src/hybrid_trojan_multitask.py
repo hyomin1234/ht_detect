@@ -235,23 +235,27 @@ class MultiTaskLoss(nn.Module):
         return 1.0 - dice
 
     def _graph_count_loss(self, logits, targets, valid_mask, batch_idx):
-        # logits/targets/valid_mask/batch_idx: [N]
         p = torch.sigmoid(logits)
         uniq = torch.unique(batch_idx)
         losses = []
+
         for g in uniq:
             gm = (batch_idx == g) & valid_mask
             if gm.sum() == 0:
                 continue
+
+            n = gm.sum().float()
             pred_cnt = p[gm].sum()
             true_cnt = targets[gm].sum()
 
-            # sparse graph(트로이 게이트 적음) 가중치 증가
-            sparse_w = 2.0 if true_cnt.item() <= 64 else 1.0
+            pred_ratio = pred_cnt / n
+            true_ratio = true_cnt / n
 
-            # SmoothL1 with moderate beta
-            l = F.smooth_l1_loss(pred_cnt, true_cnt, beta=8.0, reduction="mean")
-            losses.append(sparse_w * l)
+            # ratio 중심 + count 보조(루트n 정규화)
+            l_ratio = F.smooth_l1_loss(pred_ratio, true_ratio, beta=0.02, reduction="mean")
+            l_cnt = F.smooth_l1_loss(pred_cnt, true_cnt, beta=16.0, reduction="mean") / torch.sqrt(n)
+
+            losses.append(0.8 * l_ratio + 0.2 * l_cnt)
 
         if len(losses) == 0:
             return logits.sum() * 0.0

@@ -157,33 +157,84 @@ def collect_eval_cache(model, loader, device):
     }
 
 
+from sklearn.metrics import roc_auc_score, average_precision_score, f1_score, precision_score, recall_score
+
 def metrics_from_cache(cache, threshold=0.5):
     if cache is None:
         return {}
+    
+    logits = cache["logits_bin"].view(-1)
+    y = cache["y_bin"].view(-1).long()
+    mask = cache["mask_bin"].view(-1).bool()
+    
+    m = mask & (y >= 0)
+    if m.sum() == 0:
+        return {"bin_auroc": float("nan"), "bin_ap": float("nan"), "bin_f1": 0.0,
+                "bin_precision": 0.0, "bin_recall": 0.0,
+                "bin_tp": 0, "bin_fp": 0, "bin_fn": 0, "bin_n": 0,
+                "type_macro_f1": float("nan")}
 
-    m_bin = binary_metrics_from_logits(
-        cache["logits_bin"], cache["y_bin"], cache["mask_bin"], threshold=threshold
-    )
-    m_type = multiclass_macro_f1(
-        cache["logits_type"], cache["y_type"], cache["mask_type"]
-    )
+    logits = logits[m]
+    y = y[m]
 
-    # confusion counts 정수화
-    for k in ["tp", "fp", "fn", "n"]:
-        if k in m_bin:
-            m_bin[k] = int(m_bin[k])
+    probs = torch.sigmoid(logits)
+    finite = torch.isfinite(probs)
+    probs = probs[finite]
+    y = y[finite]
+
+    if probs.numel() == 0:
+        return {"bin_auroc": float("nan"), "bin_ap": float("nan"), "bin_f1": 0.0,
+                "bin_precision": 0.0, "bin_recall": 0.0,
+                "bin_tp": 0, "bin_fp": 0, "bin_fn": 0, "bin_n": 0,
+                "type_macro_f1": float("nan")}
+
+    y_np = y.numpy()
+    p_np = probs.numpy()
+
+    # AUROC/AP 안전 계산
+    if np.unique(y_np).size >= 2:
+        try:
+            auroc = float(roc_auc_score(y_np, p_np))
+        except Exception:
+            auroc = float("nan")
+        try:
+            ap = float(average_precision_score(y_np, p_np))
+        except Exception:
+            ap = float("nan")
+    else:
+        auroc = float("nan")
+        ap = float("nan")
+
+    y_hat = (p_np >= threshold).astype(np.int64)
+
+    f1 = float(f1_score(y_np, y_hat, zero_division=0))
+    prec = float(precision_score(y_np, y_hat, zero_division=0))
+    rec = float(recall_score(y_np, y_hat, zero_division=0))
+
+    tp = int(((y_hat == 1) & (y_np == 1)).sum())
+    fp = int(((y_hat == 1) & (y_np == 0)).sum())
+    fn = int(((y_hat == 0) & (y_np == 1)).sum())
+    
+    # Type metric (if implementation exists in splits_metrics, use it, otherwise placeholder)
+    # Using existing function call if possible, but we don't have logits_type here easily if we unpacked earlier.
+    # Actually cache has logits_type.
+    
+    m_type_val = float("nan")
+    if "logits_type" in cache and "y_type" in cache and "mask_type" in cache:
+         m_type = multiclass_macro_f1(cache["logits_type"], cache["y_type"], cache["mask_type"])
+         m_type_val = m_type.get("macro_f1", float("nan"))
 
     return {
-        "bin_auroc": m_bin.get("auroc", float("nan")),
-        "bin_ap": m_bin.get("ap", float("nan")),
-        "bin_f1": m_bin.get("f1", float("nan")),
-        "bin_precision": m_bin.get("precision", float("nan")),
-        "bin_recall": m_bin.get("recall", float("nan")),
-        "bin_tp": m_bin.get("tp", 0),
-        "bin_fp": m_bin.get("fp", 0),
-        "bin_fn": m_bin.get("fn", 0),
-        "bin_n": m_bin.get("n", 0),
-        "type_macro_f1": m_type.get("macro_f1", float("nan")),
+        "bin_auroc": auroc,
+        "bin_ap": ap,
+        "bin_f1": f1,
+        "bin_precision": prec,
+        "bin_recall": rec,
+        "bin_tp": tp,
+        "bin_fp": fp,
+        "bin_fn": fn,
+        "bin_n": int(len(y_np)),
+        "type_macro_f1": m_type_val,
     }
 
 
@@ -296,7 +347,7 @@ def main():
         type_class_weight=type_weight,
         lambda_type=0.30,
         lambda_cons=0.0,
-        lambda_count=0.45,                # 추가
+        lambda_count=0.05,                # 추가
         neg_keep_ratio=0.25,              # 추가
         gamma_pos=1.0,
         gamma_neg=3.0,
@@ -304,10 +355,10 @@ def main():
         w_focal=0.8,
         w_dice=0.4,
     )
-    optimizer = torch.optim.AdamW(model.parameters(), lr=8e-4, weight_decay=1e-4)
-    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=220, eta_min=1e-5)
+    optimizer = torch.optim.AdamW(model.parameters(), lr=3e-4, weight_decay=1e-4)
+    scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(optimizer, T_max=150, eta_min=1e-5)
 
-    epochs = 220
+    epochs = 150
     patience = 25
     best_state = None
     best_val_ap = -1.0
@@ -331,10 +382,15 @@ def main():
                 continue
 
             loss, logs = criterion(out, batch, train_mask_bin, train_mask_type)
+            
+            if not torch.isfinite(loss):
+                print(f"[WARN] non-finite loss at epoch {epoch}, skip batch")
+                optimizer.zero_grad(set_to_none=True)
+                continue
 
             optimizer.zero_grad()
             loss.backward()
-            torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=5.0)
+            torch.nn.utils.clip_grad_norm_(model.parameters(), max_norm=1.0)
             optimizer.step()
 
             total_loss += float(loss.item())
@@ -359,9 +415,12 @@ def main():
                 f"Val AP: {val_ap:.4f} | Val F1@{tuned_thr:.2f}: {val_f1:.4f}"
             )
 
-            improved = (val_ap == val_ap) and (val_ap > best_val_ap)
+            # Early stopping based on F1 (more robust to AP being NaN)
+            current_metric = val_f1
+            improved = (current_metric == current_metric) and (current_metric > best_val_ap) # reusing variable name for logic simplicity, though conceptually it tracks 'best metric'
+            
             if improved:
-                best_val_ap = val_ap
+                best_val_ap = current_metric # actually storing F1 now as 'best score'
                 best_thr = tuned_thr
                 best_state = {k: v.detach().cpu().clone() for k, v in model.state_dict().items()}
                 bad = 0
