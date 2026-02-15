@@ -1,0 +1,47 @@
+ 
+****************************************
+Report : area
+Design : top
+Version: W-2024.09-SP3
+Date   : Tue Jan 20 03:57:02 2026
+****************************************
+
+Library(s) Used:
+
+    asap7sc7p5t_SEQ_RVT_TT_nldm_220123 (File: /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SEQ_RVT_TT_nldm_220123.db)
+    asap7sc7p5t_INVBUF_RVT_TT_nldm_211120 (File: /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_INVBUF_RVT_TT_nldm_220122.db)
+    asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120 (File: /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.db)
+    asap7sc7p5t_OA_RVT_TT_nldm_211120 (File: /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_OA_RVT_TT_nldm_211120.db)
+    asap7sc7p5t_AO_RVT_TT_nldm_211120 (File: /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_AO_RVT_TT_nldm_211120.db)
+
+Number of ports:                          387
+Number of nets:                        151278
+Number of cells:                       151150
+Number of combinational cells:         144148
+Number of sequential cells:              7002
+Number of macros/black boxes:               0
+Number of buf/inv:                      31702
+Number of references:                      36
+
+Combinational area:              10277.514948
+Buf/Inv area:                     1388.949138
+Noncombinational area:            2052.980564
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 12330.495512
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ----------------------------- 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-  Black-
+                                  Total       Total    national    national   boxes   Design
+--------------------------------  ----------  -------  ----------  ---------  ------  ---------
+top                               12330.4955    100.0  10277.5149  2052.9806  0.0000  top
+--------------------------------  ----------  -------  ----------  ---------  ------  ---------
+Total                                                  10277.5149  2052.9806  0.0000
+
+1

@@ -1,0 +1,85 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'aes_128' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : qor
+Design : aes_128
+Version: W-2024.09-SP3
+Date   : Sat Jan 24 14:11:09 2026
+****************************************
+
+
+  Timing Path Group 'clk'
+  -----------------------------------
+  Levels of Logic:              13.00
+  Critical Path Length:        584.95
+  Critical Path Slack:        1396.78
+  Critical Path Clk Period:   2000.00
+  Total Negative Slack:          0.00
+  No. of Violating Paths:        0.00
+  Worst Hold Violation:          0.00
+  Total Hold Violation:          0.00
+  No. of Hold Violations:        0.00
+  -----------------------------------
+
+
+  Cell Count
+  -----------------------------------
+  Hierarchical Cell Count:          0
+  Hierarchical Port Count:          0
+  Leaf Cell Count:             149842
+  Buf/Inv Cell Count:           31288
+  Buf Cell Count:                 144
+  Inv Cell Count:               31144
+  CT Buf/Inv Cell Count:            0
+  Combinational Cell Count:    142994
+  Sequential Cell Count:         6848
+  Macro Count:                      0
+  -----------------------------------
+
+
+  Area
+  -----------------------------------
+  Combinational Area:    10211.219688
+  Noncombinational Area:  1996.876724
+  Buf/Inv Area:           1370.636658
+  Total Buffer Area:             8.40
+  Total Inverter Area:        1362.24
+  Macro/Black Box Area:      0.000000
+  Net Area:                  0.000000
+  -----------------------------------
+  Cell Area:             12208.096412
+  Design Area:           12208.096412
+
+
+  Design Rules
+  -----------------------------------
+  Total Number of Nets:        149969
+  Nets With Violations:             0
+  Max Trans Violations:             0
+  Max Cap Violations:               0
+  -----------------------------------
+
+
+  Hostname: dice
+
+  Compile CPU Statistics
+  -----------------------------------------
+  Resource Sharing:                    5.64
+  Logic Optimization:                 14.57
+  Mapping Optimization:               94.49
+  -----------------------------------------
+  Overall Compile Time:              441.32
+  Overall Compile Wall Clock Time:   443.87
+
+  --------------------------------------------------------------------
+
+  Design  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+
+  Design (Hold)  WNS: 0.00  TNS: 0.00  Number of Violating Paths: 0
+
+  --------------------------------------------------------------------
+
+
+1

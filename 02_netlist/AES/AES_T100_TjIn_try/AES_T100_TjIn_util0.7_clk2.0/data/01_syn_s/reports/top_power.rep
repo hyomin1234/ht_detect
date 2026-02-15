@@ -1,0 +1,64 @@
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : top
+Version: W-2024.09-SP3
+Date   : Fri Jan 23 02:17:07 2026
+****************************************
+
+
+Library(s) Used:
+
+    asap7sc7p5t_SEQ_RVT_TT_nldm_220123 (File: /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SEQ_RVT_TT_nldm_220123.db)
+    asap7sc7p5t_INVBUF_RVT_TT_nldm_211120 (File: /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_INVBUF_RVT_TT_nldm_220122.db)
+    asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120 (File: /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.db)
+    asap7sc7p5t_AO_RVT_TT_nldm_211120 (File: /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_AO_RVT_TT_nldm_211120.db)
+    asap7sc7p5t_OA_RVT_TT_nldm_211120 (File: /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_OA_RVT_TT_nldm_211120.db)
+    gtech (File: /home/eda/synopsys/syn/W-2024.09-SP3/libraries/syn/gtech.db)
+
+
+Operating Conditions: PVT_0P7V_25C   Library: asap7sc7p5t_AO_RVT_TT_nldm_211120
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 0.7  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ps
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  = 8.403403 mW   (63%)
+  Net Switching Power  = 4.961691 mW   (37%)
+                         ---------
+Total Dynamic Power    = 13.365095 mW  (100%)
+
+Cell Leakage Power     =  10.6567 uW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad           0.000000          0.000000          0.000000          0.000000  (   0.00%)
+memory           0.000000          0.000000          0.000000          0.000000  (   0.00%)
+black_box        0.000000          0.000000          0.000000          0.000000  (   0.00%)
+clock_network    3.787566          0.000000          0.000000          3.787566  (  28.32%)  i
+register         1.990915          1.077120        1.571135e+06          3.069616
+                                                                                 (  22.95%)
+sequential       0.000000          0.000000          0.000000          0.000000  (   0.00%)
+combinational    2.624978          3.884545        9.085528e+06          6.518596
+                                                                                 (  48.73%)
+--------------------------------------------------------------------------------------------------
+Total            8.403459 mW       4.961665 mW     1.065666e+07 pW      13.375778 mW
+1

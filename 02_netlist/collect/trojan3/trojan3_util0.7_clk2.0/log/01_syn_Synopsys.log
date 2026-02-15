@@ -1,0 +1,437 @@
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid this.
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version W-2024.09-SP3 for linux64 - Jan 07, 2025 
+
+                    Copyright (c) 1988 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+Current time:       Sat Feb 14 08:40:44 2026
+Hostname:           dice
+CPU Model:          Intel(R) Xeon(R) Gold 6242R CPU @ 3.10GHz
+CPU Details:        Cores = 80 : Sockets = 2 : Cache Size = 36608 KB : Freq = 1.47 GHz
+OS:                 Linux 3.10.0-1160.el7.x86_64
+RAM:                251 GB (Free  14 GB)
+Swap:               255 GB (Free 255 GB)
+Work Filesystem:    /home mounted to /dev/sdb
+Tmp Filesystem:     / mounted to /dev/mapper/centos-root
+Work Disk:          7450 GB (Free 6837 GB)
+Tmp Disk:           7900 GB (Free 7893 GB)
+
+CPU Load: 1%, Ram Free: 14 GB, Swap Free: 255 GB, Work Disk Free: 6837 GB, Tmp Disk Free: 7893 GB
+set TOOL DC
+DC
+set STAGE syn
+syn
+source /home/suwankim/students/hyomin/CAD/scripts/main_Synopsys.tcl
+Running PRESTO HDLC
+Compiling source file /home/suwankim/students/hyomin/CAD/RTL/0_contest_open/trojan3/trojan3.v
+Presto compilation completed successfully.
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_AO_RVT_TT_nldm_211120.db'
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_INVBUF_RVT_TT_nldm_220122.db'
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_OA_RVT_TT_nldm_211120.db'
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SEQ_RVT_TT_nldm_220123.db'
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.db'
+Loading db file '/home/eda/synopsys/syn/W-2024.09-SP3/libraries/syn/gtech.db'
+Loading db file '/home/eda/synopsys/syn/W-2024.09-SP3/libraries/syn/standard.sldb'
+  Loading link library 'asap7sc7p5t_AO_RVT_TT_nldm_211120'
+  Loading link library 'asap7sc7p5t_INVBUF_RVT_TT_nldm_211120'
+  Loading link library 'asap7sc7p5t_OA_RVT_TT_nldm_211120'
+  Loading link library 'asap7sc7p5t_SEQ_RVT_TT_nldm_220123'
+  Loading link library 'asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+
+Inferred memory devices in process in routine 'Trojan3' in file
+	 /home/suwankim/students/hyomin/CAD/RTL/0_contest_open/trojan3/trojan3.v'.
+==================================================================================
+|    Register Name    |   Type    | Width | Bus | MB |  Set  | Reset | ST | Line |
+==================================================================================
+|     counter_reg     | Flip-flop |   8   |  Y  | N  | None  | Async | N  |  8   |
+|    data_out_reg     | Flip-flop |  16   |  Y  | N  | None  | None  | N  |  14  |
+==================================================================================
+Presto compilation completed successfully. (Trojan3)
+Module: Trojan3, Ports: 34, Input: 18, Output: 16, Inout: 0
+Module: Trojan3, Registers: 24, Async set/reset: 8, Sync set/reset: 0
+Information: Module Trojan3 report end. (ELAB-965)
+Elaborated 1 design.
+Current design is now 'Trojan3'.
+Current design is 'Trojan3'.
+
+  Linking design 'Trojan3'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  Trojan3                     /home/suwankim/students/hyomin/CAD/designs/trojan3/trojan3_util0.7_clk2.0/Trojan3.db
+  asap7sc7p5t_AO_RVT_TT_nldm_211120 (library) /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_AO_RVT_TT_nldm_211120.db
+  asap7sc7p5t_INVBUF_RVT_TT_nldm_211120 (library) /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_INVBUF_RVT_TT_nldm_220122.db
+  asap7sc7p5t_OA_RVT_TT_nldm_211120 (library) /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_OA_RVT_TT_nldm_211120.db
+  asap7sc7p5t_SEQ_RVT_TT_nldm_220123 (library) /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SEQ_RVT_TT_nldm_220123.db
+  asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120 (library) /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.db
+
+Writing ddc file './data/01_syn_s/elab.ddc'.
+Clock source pin: clk
+Clock source pin (from variables.tcl): clk
+Reset pin: rst
+Reset pin (from variables.tcl): rst
+Clock target: 2000.0 ps
+Clock target (from variables.tcl): 2000.0 ps
+Info: Applied constraints to reset pin rst
+Current design is 'Trojan3'.
+Warning: Dont_touch on net 'rst' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+Warning: The value of variable 'compile_preserve_subdesign_interfaces' has been changed to true because '-no_boundary_optimization' is used. (OPT-133)
+Information: Starting from 2013.12 release, constant propagation is enabled even when boundary optimization is disabled. (OPT-1318)
+Loading db file '/home/eda/synopsys/syn/W-2024.09-SP3/libraries/syn/dw_foundation.sldb'
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Performing leakage power optimization. (PWR-850)
+CPU Load: 1%, Ram Free: 14 GB, Swap Free: 255 GB, Work Disk Free: 6837 GB, Tmp Disk Free: 7893 GB
+Analyzing: "/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_AO_RVT_TT_nldm_211120.db"
+Analyzing: "/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_INVBUF_RVT_TT_nldm_220122.db"
+Analyzing: "/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_OA_RVT_TT_nldm_211120.db"
+Analyzing: "/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SEQ_RVT_TT_nldm_220123.db"
+Analyzing: "/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.db"
+Library analysis succeeded.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | W-2024.09-DWBB_202409.3 |     *     |
+| Licensed DW Building Blocks        | W-2024.09-DWBB_202409.3 |     *     |
+============================================================================
+
+Warning: Dont_touch on net 'rst' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler WLM                                                               |
+| Command Line | compile_ultra -no_autoungroup -no_boundary_optimization                           |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 38                                     |
+| Number of User Hierarchies                              | 0                                      |
+| Sequential Cell Count                                   | 24                                     |
+| Macro Count                                             | 0                                      |
+| Pad Count                                               | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT Class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch Cells                              | 4                                      |
+| Number of Dont Touch Nets                               | 3                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with Target Library Subset (with clock_path)     | false  (false )                        |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 1 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'Trojan3'
+
+Warning: Dont_touch on net 'rst' may be overridden by compile because it
+	is connected to generic logic. Use all_connected to see net
+	connections. (OPT-461)
+  Loading target library 'asap7sc7p5t_AO_RVT_TT_nldm_211120'
+  Loading target library 'asap7sc7p5t_OA_RVT_TT_nldm_211120'
+  Loading target library 'asap7sc7p5t_SEQ_RVT_TT_nldm_220123'
+  Loading target library 'asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120'
+LNC WARNING: Found output_to_output lib arc on HAxp5_ASAP7_75t_R.
+Loaded alib file './alib-52/asap7sc7p5t_AO_RVT_TT_nldm_211120.db.alib' (placeholder)
+Loaded alib file './alib-52/asap7sc7p5t_INVBUF_RVT_TT_nldm_220122.db.alib' (placeholder)
+Loaded alib file './alib-52/asap7sc7p5t_OA_RVT_TT_nldm_211120.db.alib' (placeholder)
+Loaded alib file './alib-52/asap7sc7p5t_SEQ_RVT_TT_nldm_220123.db.alib' (placeholder)
+Loaded alib file './alib-52/asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.db.alib' (placeholder)
+Warning: Only placeholder alibs were found. Proceeding with library analysis. (OPT-1311)
+CPU Load: 1%, Ram Free: 14 GB, Swap Free: 255 GB, Work Disk Free: 6837 GB, Tmp Disk Free: 7893 GB
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'Trojan3'
+ Implement Synthetic for 'Trojan3'.
+CPU Load: 1%, Ram Free: 14 GB, Swap Free: 255 GB, Work Disk Free: 6837 GB, Tmp Disk Free: 7893 GB
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'TIELOx1_ASAP7_75t_R' in the library 'asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120' is not characterized for internal power. (PWR-536)
+Information: The library cell 'TIEHIx1_ASAP7_75t_R' in the library 'asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Information: Added key list 'DesignWare' to design 'Trojan3'. (DDB-72)
+Warning: Only placeholder alibs were found. Proceeding with library analysis. (OPT-1311)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:01:45      15.0      0.00       0.0       0.0                           12851.9678
+    0:01:45      15.0      0.00       0.0       0.0                           12851.9678
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:01:45      15.0      0.00       0.0       0.0                           11778.7441
+    0:01:45      15.0      0.00       0.0       0.0                           11778.7441
+    0:01:45      15.0      0.00       0.0       0.0                           11778.7441
+    0:01:45      15.0      0.00       0.0       0.0                           11778.7441
+    0:01:45      14.9      0.00       0.0       0.0                           11777.8672
+    0:01:45      14.9      0.00       0.0       0.0                           11777.8672
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:01:45      15.0      0.00       0.0       0.0                           11778.7441
+    0:01:45      15.0      0.00       0.0       0.0                           11778.7441
+    0:01:45      15.0      0.00       0.0       0.0                           11778.7441
+    0:01:45      15.0      0.00       0.0       0.0                           11778.7441
+    0:01:45      15.0      0.00       0.0       0.0                           11778.7441
+    0:01:46      15.0      0.00       0.0       0.0                           11670.3545
+    0:01:46      15.0      0.00       0.0       0.0                           11670.3545
+    0:01:46      15.0      0.00       0.0       0.0                           11670.3545
+    0:01:46      15.0      0.00       0.0       0.0                           11670.3545
+    0:01:46      15.0      0.00       0.0       0.0                           11670.3545
+    0:01:46      15.0      0.00       0.0       0.0                           11670.3545
+    0:01:46      15.0      0.00       0.0       0.0                           11670.3545
+    0:01:46      15.0      0.00       0.0       0.0                           11670.3545
+    0:01:46      15.0      0.00       0.0       0.0                           11670.3545
+    0:01:46      15.0      0.00       0.0       0.0                           11670.3545
+    0:01:46      15.0      0.00       0.0       0.0                           11670.3545
+    0:01:46      15.0      0.00       0.0       0.0                           11670.3545
+    0:01:46      15.0      0.00       0.0       0.0                           11670.3545
+    0:01:46      15.0      0.00       0.0       0.0                           11670.3545
+    0:01:46      15.0      0.00       0.0       0.0                           11670.3545
+    0:01:46      15.0      0.00       0.0       0.0                           11670.3545
+    0:01:46      15.0      0.00       0.0       0.0                           11670.3545
+    0:01:46      15.0      0.00       0.0       0.0                           11670.3545
+    0:01:46      15.0      0.00       0.0       0.0                           11670.3545
+    0:01:46      15.0      0.00       0.0       0.0                           11670.3545
+    0:01:46      15.0      0.00       0.0       0.0                           11670.3545
+    0:01:46      15.0      0.00       0.0       0.0                           11670.3545
+    0:01:46      15.0      0.00       0.0       0.0                           11670.3545
+    0:01:46      15.0      0.00       0.0       0.0                           11670.3545
+    0:01:46      15.0      0.00       0.0       0.0                           11500.6396
+    0:01:46      15.0      0.00       0.0       0.0                           11500.6396
+    0:01:46      15.0      0.00       0.0       0.0                           11500.6396
+    0:01:46      15.0      0.00       0.0       0.0                           11500.6396
+    0:01:46      15.0      0.00       0.0       0.0                           11500.6396
+    0:01:46      15.0      0.00       0.0       0.0                           11500.6396
+    0:01:46      15.0      0.00       0.0       0.0                           11500.6396
+    0:01:46      15.0      0.00       0.0       0.0                           11500.6396
+    0:01:46      15.0      0.00       0.0       0.0                           11500.6396
+    0:01:46      15.0      0.00       0.0       0.0                           11500.6396
+    0:01:46      15.0      0.00       0.0       0.0                           11500.6396
+    0:01:46      15.0      0.00       0.0       0.0                           11500.6396
+    0:01:46      15.0      0.00       0.0       0.0                           11500.6396
+    0:01:46      15.0      0.00       0.0       0.0                           11500.6396
+    0:01:46      15.0      0.00       0.0       0.0                           11500.6396
+    0:01:46      15.0      0.00       0.0       0.0                           11500.6396
+    0:01:46      15.0      0.00       0.0       0.0                           11500.6396
+    0:01:46      15.0      0.00       0.0       0.0                           11500.6396
+    0:01:46      15.0      0.00       0.0       0.0                           11500.6396
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:01:46      15.0      0.00       0.0       0.0                           11500.6396
+    0:01:46      15.0      0.00       0.0       0.0                           11500.6396
+    0:01:46      15.0      0.00       0.0       0.0                           11500.6396
+    0:01:46      15.0      0.00       0.0       0.0                           11500.6396
+    0:01:46      15.0      0.00       0.0       0.0                           11500.6396
+    0:01:46      15.0      0.00       0.0       0.0                           11500.6396
+    0:01:46      15.0      0.00       0.0       0.0                           11500.6396
+    0:01:46      15.0      0.00       0.0       0.0                           11500.6396
+    0:01:46      15.0      0.00       0.0       0.0                           11500.6396
+    0:01:46      15.0      0.00       0.0       0.0                           11500.6396
+    0:01:46      15.0      0.00       0.0       0.0                           11500.6396
+CPU Load: 1%, Ram Free: 14 GB, Swap Free: 255 GB, Work Disk Free: 6837 GB, Tmp Disk Free: 7893 GB
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_INVBUF_RVT_TT_nldm_220122.db'
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_AO_RVT_TT_nldm_211120.db'
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_OA_RVT_TT_nldm_211120.db'
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SEQ_RVT_TT_nldm_220123.db'
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+  Loading target library 'asap7sc7p5t_AO_RVT_TT_nldm_211120'
+  Loading target library 'asap7sc7p5t_OA_RVT_TT_nldm_211120'
+  Loading target library 'asap7sc7p5t_SEQ_RVT_TT_nldm_220123'
+  Loading target library 'asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120'
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+CPU Load: 1%, Ram Free: 13 GB, Swap Free: 255 GB, Work Disk Free: 6837 GB, Tmp Disk Free: 7893 GB
+Information: Total number of MV cells in the design.
+----------------------------------------------------------------------------------------------------
+ MV Cells                                           Total Number                                   
+----------------------------------------------------------------------------------------------------
+ Level Shifter:                                     0                                             
+ Enable Level Shifter:                              0                                             
+ Isolation Cell:                                    0                                             
+ Retention Cell:                                    0                                             
+ Retention Clamp Cell:                              0                                             
+ Switch Cell:                                       0                                             
+ Always-On Cell:                                    0                                             
+ Repeater Cell:                                     0                                             
+
+----------------------------------------------------------------------------------------------------
+Unmapped MV Cells 
+----------------------------------------------------------------------------------------------------
+0 Isolation Cells are unmapped 
+0 Retention Clamp Cells are unmapped 
+----------------------------------------------------------------------------------------------------
+Warning: Design has no hierarchy.  No cells can be ungrouped. (UID-228)
+Writing ddc file './data/01_syn_s/compile.ddc'.
+Current design is 'Trojan3'.
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -capacitance
+Design : Trojan3
+Version: W-2024.09-SP3
+Date   : Sat Feb 14 08:42:34 2026
+****************************************
+
+Operating Conditions: PVT_0P7V_25C   Library: asap7sc7p5t_AO_RVT_TT_nldm_211120
+Wire Load Model Mode: top
+
+  Startpoint: counter_reg[0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: data_out_reg[15]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                          Cap      Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  counter_reg[0]/CLK (DFFASRHQNx1_ASAP7_75t_R)        0.000000   0.000000 r
+  counter_reg[0]/QN (DFFASRHQNx1_ASAP7_75t_R)
+                                            2.710438  62.269180  62.269180 r
+  U103/Y (NOR4xp25_ASAP7_75t_R)             0.716966  20.412209  82.681389 f
+  U105/Y (INVxp33_ASAP7_75t_R)              0.720088  19.301941  101.983330 r
+  U106/Y (NOR2xp33_ASAP7_75t_R)             0.716966  19.006798  120.990128 f
+  U108/Y (INVxp33_ASAP7_75t_R)              0.701451  19.160431  140.150558 r
+  U109/Y (NOR2xp33_ASAP7_75t_R)             0.716966  19.772766  159.923325 f
+  U111/Y (INVxp33_ASAP7_75t_R)              0.720088  19.784531  179.707855 r
+  U112/Y (NOR2xp33_ASAP7_75t_R)             0.716966  19.112930  198.820786 f
+  U114/Y (INVxp33_ASAP7_75t_R)              0.701451  19.160431  217.981216 r
+  U115/Y (NOR2xp33_ASAP7_75t_R)             0.716966  19.772766  237.753983 f
+  U117/Y (INVxp33_ASAP7_75t_R)              0.918848  22.160385  259.914368 r
+  U118/Y (NOR2xp33_ASAP7_75t_R)             1.300152  26.772125  286.686493 f
+  U119/Y (NAND2xp33_ASAP7_75t_R)            1.298845  33.979187  320.665680 r
+  U121/Y (NOR2xp33_ASAP7_75t_R)             1.300152  32.433990  353.099670 f
+  U122/Y (NAND2xp33_ASAP7_75t_R)            1.298845  34.760681  387.860352 r
+  U124/Y (NOR2xp33_ASAP7_75t_R)             1.300152  32.537384  420.397736 f
+  U125/Y (NAND2xp33_ASAP7_75t_R)            1.298845  34.796448  455.194183 r
+  U127/Y (NOR2xp33_ASAP7_75t_R)             1.300152  32.542114  487.736298 f
+  U128/Y (NAND2xp33_ASAP7_75t_R)            1.298845  34.798126  522.534424 r
+  U130/Y (NOR2xp33_ASAP7_75t_R)             1.300152  32.542358  555.076782 f
+  U131/Y (NAND2xp33_ASAP7_75t_R)            1.298845  34.798157  589.874939 r
+  U133/Y (NOR2xp33_ASAP7_75t_R)             1.300152  32.542358  622.417297 f
+  U134/Y (NAND2xp33_ASAP7_75t_R)            1.298845  34.798157  657.215454 r
+  U136/Y (NOR2xp33_ASAP7_75t_R)             1.300152  32.542358  689.757812 f
+  U137/Y (NAND2xp33_ASAP7_75t_R)            1.393962  35.968506  725.726318 r
+  U139/Y (XOR2xp5_ASAP7_75t_R)              0.561679  29.353943  755.080261 r
+  data_out_reg[15]/D (DFFASRHQNx1_ASAP7_75t_R)        0.000000   755.080261 r
+  data arrival time                                              755.080261
+
+  clock clk (rise edge)                               2000.000000
+                                                                 2000.000000
+  clock network delay (ideal)                         0.000000   2000.000000
+  data_out_reg[15]/CLK (DFFASRHQNx1_ASAP7_75t_R)      0.000000   2000.000000 r
+  library setup time                                  -28.251760 1971.748291
+  data required time                                             1971.748291
+  --------------------------------------------------------------------------
+  data required time                                             1971.748291
+  data arrival time                                              -755.080261
+  --------------------------------------------------------------------------
+  slack (MET)                                                    1216.667969
+
+
+Information: set_input_delay values are added to the propagated clock skew. (TIM-113)
+Writing verilog file '/home/suwankim/students/hyomin/CAD/designs/trojan3/trojan3_util0.7_clk2.0/Trojan3.netlist.v'.
+dc_shell> 
+Memory usage for this session 311 Mbytes.
+Memory usage for this session including child processes 311 Mbytes.
+CPU usage for this session 114 seconds ( 0.03 hours ).
+Elapsed time for this session 114 seconds ( 0.03 hours ).
+
+Thank you...

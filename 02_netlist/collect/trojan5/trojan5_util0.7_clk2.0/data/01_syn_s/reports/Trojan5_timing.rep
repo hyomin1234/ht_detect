@@ -1,0 +1,46 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Trojan5
+Version: W-2024.09-SP3
+Date   : Sat Feb 14 08:46:23 2026
+****************************************
+
+Operating Conditions: PVT_0P7V_25C   Library: asap7sc7p5t_AO_RVT_TT_nldm_211120
+Wire Load Model Mode: top
+
+  Startpoint: prog_dat_i[12]
+              (input port)
+  Endpoint: prog_adr_o[11]
+            (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                 0.000000   0.000000 r
+  prog_dat_i[12] (in)                  0.000000   0.000000 r
+  U5/Y (OAI211xp5_ASAP7_75t_R)         11.236475  11.236475 f
+  U6/Y (OA211x2_ASAP7_75t_R)           39.389549  50.626022 f
+  U7/Y (NAND2xp33_ASAP7_75t_R)         25.820496  76.446518 r
+  U9/Y (NOR2xp33_ASAP7_75t_R)          31.795753  108.242271 f
+  U10/Y (NAND2xp33_ASAP7_75t_R)        34.624489  142.866760 r
+  U12/Y (NOR2xp33_ASAP7_75t_R)         32.811508  175.678268 f
+  U13/Y (NAND2xp33_ASAP7_75t_R)        34.974564  210.652832 r
+  U15/Y (NOR2xp33_ASAP7_75t_R)         32.858154  243.510986 f
+  U16/Y (NAND2xp33_ASAP7_75t_R)        34.990631  278.501617 r
+  U18/Y (NOR2xp33_ASAP7_75t_R)         32.860321  311.361938 f
+  U19/Y (NAND2xp33_ASAP7_75t_R)        34.991394  346.353333 r
+  U21/Y (NOR2xp33_ASAP7_75t_R)         32.860413  379.213745 f
+  U27/Y (NAND2xp33_ASAP7_75t_R)        36.485657  415.699402 r
+  U28/Y (OA21x2_ASAP7_75t_R)           26.729675  442.429077 r
+  prog_adr_o[11] (out)                 0.000000   442.429077 r
+  data arrival time                               442.429077
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

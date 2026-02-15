@@ -1,0 +1,450 @@
+Info: [VCS_SAVE_RESTORE_INFO] ASLR (Address Space Layout Randomization) is detected on the machine. To enable $save functionality, ASLR will be switched off and simv re-executed.
+Please use '-no_save' simv switch to avoid this.
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+               Version W-2024.09-SP3 for linux64 - Jan 07, 2025 
+
+                    Copyright (c) 1988 - 2025 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+Current time:       Sat Feb 14 08:50:15 2026
+Hostname:           dice
+CPU Model:          Intel(R) Xeon(R) Gold 6242R CPU @ 3.10GHz
+CPU Details:        Cores = 80 : Sockets = 2 : Cache Size = 36608 KB : Freq = 1.20 GHz
+OS:                 Linux 3.10.0-1160.el7.x86_64
+RAM:                251 GB (Free  14 GB)
+Swap:               255 GB (Free 255 GB)
+Work Filesystem:    /home mounted to /dev/sdb
+Tmp Filesystem:     / mounted to /dev/mapper/centos-root
+Work Disk:          7450 GB (Free 6837 GB)
+Tmp Disk:           7900 GB (Free 7893 GB)
+
+CPU Load: 1%, Ram Free: 14 GB, Swap Free: 255 GB, Work Disk Free: 6837 GB, Tmp Disk Free: 7893 GB
+set TOOL DC
+DC
+set STAGE syn
+syn
+source /home/suwankim/students/hyomin/CAD/scripts/main_Synopsys.tcl
+Running PRESTO HDLC
+Compiling source file /home/suwankim/students/hyomin/CAD/RTL/0_contest_open/trojan8/trojan8.v
+Presto compilation completed successfully.
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_AO_RVT_TT_nldm_211120.db'
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_INVBUF_RVT_TT_nldm_220122.db'
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_OA_RVT_TT_nldm_211120.db'
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SEQ_RVT_TT_nldm_220123.db'
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.db'
+Loading db file '/home/eda/synopsys/syn/W-2024.09-SP3/libraries/syn/gtech.db'
+Loading db file '/home/eda/synopsys/syn/W-2024.09-SP3/libraries/syn/standard.sldb'
+  Loading link library 'asap7sc7p5t_AO_RVT_TT_nldm_211120'
+  Loading link library 'asap7sc7p5t_INVBUF_RVT_TT_nldm_211120'
+  Loading link library 'asap7sc7p5t_OA_RVT_TT_nldm_211120'
+  Loading link library 'asap7sc7p5t_SEQ_RVT_TT_nldm_220123'
+  Loading link library 'asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120'
+  Loading link library 'gtech'
+Running PRESTO HDLC
+Presto compilation completed successfully. (Trojan8)
+Module: Trojan8, Ports: 59, Input: 43, Output: 16, Inout: 0
+Module: Trojan8, Registers: 0, Async set/reset: 0, Sync set/reset: 0
+Information: Module Trojan8 report end. (ELAB-965)
+Elaborated 1 design.
+Current design is now 'Trojan8'.
+Current design is 'Trojan8'.
+
+  Linking design 'Trojan8'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  Trojan8                     /home/suwankim/students/hyomin/CAD/designs/trojan8/trojan8_util0.7_clk2.0/Trojan8.db
+  asap7sc7p5t_AO_RVT_TT_nldm_211120 (library) /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_AO_RVT_TT_nldm_211120.db
+  asap7sc7p5t_INVBUF_RVT_TT_nldm_211120 (library) /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_INVBUF_RVT_TT_nldm_220122.db
+  asap7sc7p5t_OA_RVT_TT_nldm_211120 (library) /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_OA_RVT_TT_nldm_211120.db
+  asap7sc7p5t_SEQ_RVT_TT_nldm_220123 (library) /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SEQ_RVT_TT_nldm_220123.db
+  asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120 (library) /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.db
+
+Writing ddc file './data/01_syn_s/elab.ddc'.
+Clock source pin: clk
+Clock source pin (from variables.tcl): clk
+Reset pin: rst
+Reset pin (from variables.tcl): rst
+Clock target: 2000.0 ps
+Clock target (from variables.tcl): 2000.0 ps
+Warning: Can't find object 'clk' in design 'Trojan8'. (UID-95)
+Error: Value for list 'source_objects' must have 1 elements. (CMD-036)
+Warning: Reset pin rst defined in variables but not found in design. Skipping reset constraints.
+Current design is 'Trojan8'.
+Warning: The value of variable 'compile_preserve_subdesign_interfaces' has been changed to true because '-no_boundary_optimization' is used. (OPT-133)
+Information: Starting from 2013.12 release, constant propagation is enabled even when boundary optimization is disabled. (OPT-1318)
+Loading db file '/home/eda/synopsys/syn/W-2024.09-SP3/libraries/syn/dw_foundation.sldb'
+Warning: DesignWare synthetic library dw_foundation.sldb is added to the synthetic_library in the current command. (UISN-40)
+Information: Performing leakage power optimization. (PWR-850)
+CPU Load: 1%, Ram Free: 14 GB, Swap Free: 255 GB, Work Disk Free: 6837 GB, Tmp Disk Free: 7893 GB
+Analyzing: "/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_AO_RVT_TT_nldm_211120.db"
+Analyzing: "/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_INVBUF_RVT_TT_nldm_220122.db"
+Analyzing: "/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_OA_RVT_TT_nldm_211120.db"
+Analyzing: "/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SEQ_RVT_TT_nldm_220123.db"
+Analyzing: "/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.db"
+Library analysis succeeded.
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | W-2024.09-DWBB_202409.3 |     *     |
+| Licensed DW Building Blocks        | W-2024.09-DWBB_202409.3 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler WLM                                                               |
+| Command Line | compile_ultra -no_autoungroup -no_boundary_optimization                           |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 102                                    |
+| Number of User Hierarchies                              | 0                                      |
+| Sequential Cell Count                                   | 0                                      |
+| Macro Count                                             | 0                                      |
+| Pad Count                                               | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 1                                      |
+| Number of VT Class                                      | 0                                      |
+| Number of Clocks                                        | 0                                      |
+| Number of Dont Touch Cells                              | 9                                      |
+| Number of Dont Touch Nets                               | 0                                      |
+| Number of Size Only Cells                               | 0                                      |
+| Design with Target Library Subset (with clock_path)     | false  (false )                        |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+Information: Sequential output inversion is enabled.  SVF file must be used for formal verification. (OPT-1208)
+
+Information: There are 1 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+  Simplifying Design 'Trojan8'
+
+  Loading target library 'asap7sc7p5t_AO_RVT_TT_nldm_211120'
+  Loading target library 'asap7sc7p5t_OA_RVT_TT_nldm_211120'
+  Loading target library 'asap7sc7p5t_SEQ_RVT_TT_nldm_220123'
+  Loading target library 'asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120'
+LNC WARNING: Found output_to_output lib arc on HAxp5_ASAP7_75t_R.
+Loaded alib file './alib-52/asap7sc7p5t_AO_RVT_TT_nldm_211120.db.alib' (placeholder)
+Loaded alib file './alib-52/asap7sc7p5t_INVBUF_RVT_TT_nldm_220122.db.alib' (placeholder)
+Loaded alib file './alib-52/asap7sc7p5t_OA_RVT_TT_nldm_211120.db.alib' (placeholder)
+Loaded alib file './alib-52/asap7sc7p5t_SEQ_RVT_TT_nldm_220123.db.alib' (placeholder)
+Loaded alib file './alib-52/asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.db.alib' (placeholder)
+Warning: Only placeholder alibs were found. Proceeding with library analysis. (OPT-1311)
+CPU Load: 1%, Ram Free: 14 GB, Swap Free: 255 GB, Work Disk Free: 6837 GB, Tmp Disk Free: 7893 GB
+Information: State dependent leakage is now switched from on to off.
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'Trojan8'
+Information: Added key list 'DesignWare' to design 'Trojan8'. (DDB-72)
+ Implement Synthetic for 'Trojan8'.
+CPU Load: 1%, Ram Free: 14 GB, Swap Free: 255 GB, Work Disk Free: 6837 GB, Tmp Disk Free: 7893 GB
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+Information: The library cell 'TIELOx1_ASAP7_75t_R' in the library 'asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120' is not characterized for internal power. (PWR-536)
+Information: The library cell 'TIEHIx1_ASAP7_75t_R' in the library 'asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120' is not characterized for internal power. (PWR-536)
+Information: The target library(s) contains cell(s), other than black boxes, that are not characterized for internal power. (PWR-24)
+
+  Beginning Mapping Optimizations  (Ultra High effort)
+  -------------------------------
+Warning: Only placeholder alibs were found. Proceeding with library analysis. (OPT-1311)
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:01:46     115.3      0.00       0.0       0.0                           114663.8672
+    0:01:46     115.1      0.00       0.0       0.0                           114507.4688
+
+  Beginning Constant Register Removal
+  -----------------------------------
+
+  Beginning Global Optimizations
+  ------------------------------
+  Numerical Synthesis (Phase 1)
+  Numerical Synthesis (Phase 2)
+  Global Optimization (Phase 1)
+  Global Optimization (Phase 2)
+  Global Optimization (Phase 3)
+  Global Optimization (Phase 4)
+  Global Optimization (Phase 5)
+  Global Optimization (Phase 6)
+  Global Optimization (Phase 7)
+  Global Optimization (Phase 8)
+  Global Optimization (Phase 9)
+  Global Optimization (Phase 10)
+  Global Optimization (Phase 11)
+  Global Optimization (Phase 12)
+  Global Optimization (Phase 13)
+  Global Optimization (Phase 14)
+  Global Optimization (Phase 15)
+  Global Optimization (Phase 16)
+  Global Optimization (Phase 17)
+  Global Optimization (Phase 18)
+  Global Optimization (Phase 19)
+  Global Optimization (Phase 20)
+  Global Optimization (Phase 21)
+  Global Optimization (Phase 22)
+  Global Optimization (Phase 23)
+  Global Optimization (Phase 24)
+  Global Optimization (Phase 25)
+  Global Optimization (Phase 26)
+  Global Optimization (Phase 27)
+  Global Optimization (Phase 28)
+  Global Optimization (Phase 29)
+
+  Beginning Isolate Ports
+  -----------------------
+
+  Beginning Delay Optimization
+  ----------------------------
+    0:01:46     115.1      0.00       0.0       0.0                           105609.5703
+    0:01:46     115.1      0.00       0.0       0.0                           105609.5703
+    0:01:46     115.1      0.00       0.0       0.0                           105609.5703
+    0:01:46     115.1      0.00       0.0       0.0                           105609.5703
+    0:01:46     115.0      0.00       0.0       0.0                           105488.1406
+    0:01:46     115.0      0.00       0.0       0.0                           105488.1406
+
+  Beginning WLM Backend Optimization
+  --------------------------------------
+    0:01:46     114.7      0.00       0.0       0.0                           105293.0000
+    0:01:46     114.7      0.00       0.0       0.0                           105293.0000
+    0:01:46     114.7      0.00       0.0       0.0                           105293.0000
+    0:01:46     114.7      0.00       0.0       0.0                           105293.0000
+    0:01:46     114.7      0.00       0.0       0.0                           105293.0000
+    0:01:47     114.7      0.00       0.0       0.0                           105293.0000
+    0:01:47     114.7      0.00       0.0       0.0                           105293.0000
+    0:01:47     114.7      0.00       0.0       0.0                           105293.0000
+    0:01:47     114.7      0.00       0.0       0.0                           105293.0000
+    0:01:47     114.7      0.00       0.0       0.0                           105293.0000
+    0:01:47     114.7      0.00       0.0       0.0                           105293.0000
+    0:01:47     114.7      0.00       0.0       0.0                           105293.0000
+    0:01:47     114.7      0.00       0.0       0.0                           105293.0000
+    0:01:47     114.7      0.00       0.0       0.0                           105293.0000
+    0:01:47     114.7      0.00       0.0       0.0                           105293.0000
+    0:01:47     114.7      0.00       0.0       0.0                           105293.0000
+    0:01:47     114.7      0.00       0.0       0.0                           105293.0000
+    0:01:47     114.7      0.00       0.0       0.0                           105293.0000
+    0:01:47     114.7      0.00       0.0       0.0                           105293.0000
+    0:01:47     114.7      0.00       0.0       0.0                           105293.0000
+    0:01:47     114.7      0.00       0.0       0.0                           105293.0000
+    0:01:47     114.7      0.00       0.0       0.0                           105293.0000
+    0:01:47     114.7      0.00       0.0       0.0                           105293.0000
+    0:01:47     114.7      0.00       0.0       0.0                           105293.0000
+    0:01:47     114.7      0.00       0.0       0.0                           105293.0000
+    0:01:47     114.7      0.00       0.0       0.0                           105293.0000
+    0:01:47     114.7      0.00       0.0       0.0                           105293.0000
+    0:01:47     114.7      0.00       0.0       0.0                           105293.0000
+    0:01:47     114.7      0.00       0.0       0.0                           105293.0000
+    0:01:47     114.7      0.00       0.0       0.0                           96268.6719
+    0:01:47     114.7      0.00       0.0       0.0                           96268.6719
+    0:01:47     114.7      0.00       0.0       0.0                           96268.6719
+    0:01:47     114.7      0.00       0.0       0.0                           96268.6719
+    0:01:47     114.7      0.00       0.0       0.0                           96268.6719
+    0:01:47     114.7      0.00       0.0       0.0                           96268.6719
+    0:01:47     114.7      0.00       0.0       0.0                           96268.6719
+    0:01:47     114.7      0.00       0.0       0.0                           96268.6719
+    0:01:47     114.7      0.00       0.0       0.0                           96268.6719
+    0:01:47     114.7      0.00       0.0       0.0                           96268.6719
+    0:01:47     114.7      0.00       0.0       0.0                           96268.6719
+    0:01:47     114.7      0.00       0.0       0.0                           96268.6719
+    0:01:47     114.7      0.00       0.0       0.0                           96268.6719
+    0:01:47     114.7      0.00       0.0       0.0                           96268.6719
+    0:01:47     114.7      0.00       0.0       0.0                           96268.6719
+    0:01:47     114.7      0.00       0.0       0.0                           96268.6719
+    0:01:47     114.7      0.00       0.0       0.0                           96268.6719
+    0:01:47     114.7      0.00       0.0       0.0                           96268.6719
+    0:01:47     114.7      0.00       0.0       0.0                           96268.6719
+
+                                  TOTAL                                                
+   ELAPSED            WORST NEG   SETUP    DESIGN                              LEAKAGE 
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT            POWER  
+  --------- --------- --------- --------- --------- ------------------------- ---------
+    0:01:47     114.7      0.00       0.0       0.0                           96268.6719
+    0:01:47     114.7      0.00       0.0       0.0                           96268.6719
+    0:01:47     114.7      0.00       0.0       0.0                           96268.6719
+    0:01:47     114.7      0.00       0.0       0.0                           96268.6719
+    0:01:47     114.7      0.00       0.0       0.0                           96268.6719
+    0:01:47     114.7      0.00       0.0       0.0                           96268.6719
+    0:01:47     114.7      0.00       0.0       0.0                           96268.6719
+    0:01:47     114.7      0.00       0.0       0.0                           96268.6719
+    0:01:47     114.7      0.00       0.0       0.0                           96268.6719
+    0:01:47     114.7      0.00       0.0       0.0                           96268.6719
+    0:01:47     114.7      0.00       0.0       0.0                           96268.6719
+CPU Load: 1%, Ram Free: 14 GB, Swap Free: 255 GB, Work Disk Free: 6837 GB, Tmp Disk Free: 7893 GB
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_INVBUF_RVT_TT_nldm_220122.db'
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_AO_RVT_TT_nldm_211120.db'
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_OA_RVT_TT_nldm_211120.db'
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SEQ_RVT_TT_nldm_220123.db'
+Loading db file '/home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+  Loading target library 'asap7sc7p5t_AO_RVT_TT_nldm_211120'
+  Loading target library 'asap7sc7p5t_OA_RVT_TT_nldm_211120'
+  Loading target library 'asap7sc7p5t_SEQ_RVT_TT_nldm_220123'
+  Loading target library 'asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120'
+Information: State dependent leakage is now switched from off to on.
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: There is no defined clock in the design. (PWR-80)
+CPU Load: 1%, Ram Free: 13 GB, Swap Free: 255 GB, Work Disk Free: 6837 GB, Tmp Disk Free: 7893 GB
+Information: Total number of MV cells in the design.
+----------------------------------------------------------------------------------------------------
+ MV Cells                                           Total Number                                   
+----------------------------------------------------------------------------------------------------
+ Level Shifter:                                     0                                             
+ Enable Level Shifter:                              0                                             
+ Isolation Cell:                                    0                                             
+ Retention Cell:                                    0                                             
+ Retention Clamp Cell:                              0                                             
+ Switch Cell:                                       0                                             
+ Always-On Cell:                                    0                                             
+ Repeater Cell:                                     0                                             
+
+----------------------------------------------------------------------------------------------------
+Unmapped MV Cells 
+----------------------------------------------------------------------------------------------------
+0 Isolation Cells are unmapped 
+0 Retention Clamp Cells are unmapped 
+----------------------------------------------------------------------------------------------------
+Warning: Design has no hierarchy.  No cells can be ungrouped. (UID-228)
+Writing ddc file './data/01_syn_s/compile.ddc'.
+Current design is 'Trojan8'.
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+        -capacitance
+Design : Trojan8
+Version: W-2024.09-SP3
+Date   : Sat Feb 14 08:52:08 2026
+****************************************
+
+Operating Conditions: PVT_0P7V_25C   Library: asap7sc7p5t_AO_RVT_TT_nldm_211120
+Wire Load Model Mode: top
+
+  Startpoint: a[1] (input port)
+  Endpoint: y[15] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                          Cap      Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                0.000000   0.000000 f
+  a[1] (in)                                 15.661529 0.000000   0.000000 f
+  U261/Y (INVxp33_ASAP7_75t_R)              10.827171 130.906693 130.906693 r
+  DP_OP_34J1_122_1718/U1293/SN (FAx1_ASAP7_75t_R)
+                                            10.688083 310.658142 441.564819 f
+  U332/Y (INVxp33_ASAP7_75t_R)              8.334185  183.395630 624.960449 r
+  U493/Y (OAI22xp33_ASAP7_75t_R)            2.444613  81.650818  706.611267 f
+  U568/Y (INVxp33_ASAP7_75t_R)              2.378365  66.004944  772.616211 r
+  U761/Y (AOI21xp33_ASAP7_75t_R)            0.709776  29.779602  802.395813 f
+  U764/Y (NOR2xp33_ASAP7_75t_R)             2.265627  40.734985  843.130798 r
+  DP_OP_34J1_122_1718/U829/SN (FAx1_ASAP7_75t_R)
+                                            1.494460  68.537720  911.668518 f
+  DP_OP_34J1_122_1718/U768/CON (FAx1_ASAP7_75t_R)
+                                            0.275723  28.677002  940.345520 r
+  U682/Y (INVxp33_ASAP7_75t_R)              1.826960  34.896667  975.242188 f
+  DP_OP_34J1_122_1718/U764/CON (FAx1_ASAP7_75t_R)
+                                            0.275723  26.083252  1001.325439 r
+  U622/Y (INVxp33_ASAP7_75t_R)              1.826960  33.979126  1035.304565 f
+  DP_OP_34J1_122_1718/U760/SN (FAx1_ASAP7_75t_R)
+                                            2.401441  80.031738  1115.336304 f
+  DP_OP_34J1_122_1718/U196/CON (FAx1_ASAP7_75t_R)
+                                            1.823290  45.096191  1160.432495 r
+  DP_OP_34J1_122_1718/U190/SN (FAx1_ASAP7_75t_R)
+                                            0.913590  57.078125  1217.510620 f
+  U535/SN (HAxp5_ASAP7_75t_R)               2.394514  67.079956  1284.590576 f
+  DP_OP_34J1_122_1718/U31/CON (FAx1_ASAP7_75t_R)
+                                            1.823290  41.867554  1326.458130 r
+  DP_OP_34J1_122_1718/U31/SN (FAx1_ASAP7_75t_R)
+                                            0.913590  23.745728  1350.203857 f
+  U537/SN (HAxp5_ASAP7_75t_R)               2.102451  63.787842  1413.991699 f
+  DP_OP_35J1_123_4129/U240/CON (FAx1_ASAP7_75t_R)
+                                            1.492300  35.003052  1448.994751 r
+  DP_OP_35J1_123_4129/U240/SN (FAx1_ASAP7_75t_R)
+                                            1.102364  23.137329  1472.132080 f
+  U256/Y (INVxp33_ASAP7_75t_R)              2.500554  47.396484  1519.528564 r
+  U548/Y (AOI22xp33_ASAP7_75t_R)            0.407687  22.188965  1541.717529 f
+  U549/Y (OAI21xp33_ASAP7_75t_R)            1.492300  24.608643  1566.326172 r
+  DP_OP_35J1_123_4129/U97/SN (FAx1_ASAP7_75t_R)
+                                            1.826960  75.057861  1641.384033 f
+  DP_OP_35J1_123_4129/U44/CON (FAx1_ASAP7_75t_R)
+                                            0.275723  27.792236  1669.176270 r
+  U248/Y (INVxp33_ASAP7_75t_R)              1.494460  29.902344  1699.078613 f
+  DP_OP_35J1_123_4129/U40/CON (FAx1_ASAP7_75t_R)
+                                            0.275723  24.726562  1723.805176 r
+  U247/Y (INVxp33_ASAP7_75t_R)              1.494460  29.902344  1753.707520 f
+  DP_OP_35J1_123_4129/U36/CON (FAx1_ASAP7_75t_R)
+                                            0.275723  24.726562  1778.434082 r
+  U246/Y (INVxp33_ASAP7_75t_R)              1.494460  29.902344  1808.336426 f
+  DP_OP_35J1_123_4129/U32/CON (FAx1_ASAP7_75t_R)
+                                            0.275723  24.726562  1833.062988 r
+  U245/Y (INVxp33_ASAP7_75t_R)              1.494460  29.902344  1862.965332 f
+  DP_OP_35J1_123_4129/U28/CON (FAx1_ASAP7_75t_R)
+                                            0.275723  24.726562  1887.691895 r
+  U244/Y (INVxp33_ASAP7_75t_R)              1.494460  29.902344  1917.594238 f
+  DP_OP_35J1_123_4129/U24/CON (FAx1_ASAP7_75t_R)
+                                            0.275723  24.726562  1942.320801 r
+  U243/Y (INVxp33_ASAP7_75t_R)              1.494460  29.902344  1972.223145 f
+  DP_OP_35J1_123_4129/U20/CON (FAx1_ASAP7_75t_R)
+                                            0.275723  24.726562  1996.949707 r
+  U242/Y (INVxp33_ASAP7_75t_R)              1.494460  29.902344  2026.852051 f
+  DP_OP_35J1_123_4129/U16/CON (FAx1_ASAP7_75t_R)
+                                            1.823290  37.578613  2064.430664 r
+  U952/SN (FAx1_ASAP7_75t_R)                1.018338  56.645020  2121.075684 f
+  U953/Y (NAND3xp33_ASAP7_75t_R)            0.550727  20.647461  2141.723145 r
+  U954/Y (A2O1A1Ixp33_ASAP7_75t_R)          0.941532  23.537109  2165.260254 f
+  U957/Y (AOI21xp33_ASAP7_75t_R)            0.551569  21.239258  2186.499512 r
+  U965/Y (O2A1O1Ixp33_ASAP7_75t_R)          0.550993  17.387207  2203.886719 f
+  U966/Y (A2O1A1Ixp33_ASAP7_75t_R)          0.000000  9.783203   2213.669922 r
+  y[15] (out)                                         0.000000   2213.669922 r
+  data arrival time                                              2213.669922
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+Error: Value for list '<object_list>' must have 1 elements. (CMD-036)
+Error: Value for list 'object_list' must have 1 elements. (CMD-036)
+Writing verilog file '/home/suwankim/students/hyomin/CAD/designs/trojan8/trojan8_util0.7_clk2.0/Trojan8.netlist.v'.
+dc_shell> 
+Memory usage for this session 316 Mbytes.
+Memory usage for this session including child processes 316 Mbytes.
+CPU usage for this session 117 seconds ( 0.03 hours ).
+Elapsed time for this session 116 seconds ( 0.03 hours ).
+
+Thank you...

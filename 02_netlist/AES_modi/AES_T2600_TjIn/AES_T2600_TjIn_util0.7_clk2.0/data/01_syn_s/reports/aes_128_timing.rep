@@ -1,0 +1,59 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : aes_128
+Version: W-2024.09-SP3
+Date   : Sat Jan 24 16:31:16 2026
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: PVT_0P7V_25C   Library: asap7sc7p5t_AO_RVT_TT_nldm_211120
+Wire Load Model Mode: top
+
+  Startpoint: r3/state_out_reg[122]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: r4/t0/t0/s0/out_reg[2]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                               0.000000   0.000000
+  clock network delay (ideal)                         0.000000   0.000000
+  r3/state_out_reg[122]/CLK (DFFHQNx1_ASAP7_75t_R)    0.000000 # 0.000000 r
+  r3/state_out_reg[122]/QN (DFFHQNx1_ASAP7_75t_R)     83.111076  83.111076 r
+  r4/t0/t0/s0/U9/Y (INVxp33_ASAP7_75t_R)              61.690788  144.801865 f
+  r4/t0/t0/s0/U42/Y (NAND2xp33_ASAP7_75t_R)           69.886383  214.688248 r
+  r4/t0/t0/s0/U43/Y (NOR2xp33_ASAP7_75t_R)            70.110275  284.798523 f
+  r4/t0/t0/s0/U66/Y (NAND2xp33_ASAP7_75t_R)           48.546814  333.345337 r
+  r4/t0/t0/s0/U67/Y (INVxp33_ASAP7_75t_R)             38.579742  371.925079 f
+  r4/t0/t0/s0/U70/Y (AOI211xp5_ASAP7_75t_R)           33.342224  405.267303 r
+  r4/t0/t0/s0/U75/Y (NAND4xp25_ASAP7_75t_R)           24.958862  430.226166 f
+  r4/t0/t0/s0/U76/Y (NOR4xp25_ASAP7_75t_R)            44.030334  474.256500 r
+  r4/t0/t0/s0/U376/Y (NAND4xp25_ASAP7_75t_R)          27.504364  501.760864 f
+  r4/t0/t0/s0/U377/Y (OR4x1_ASAP7_75t_R)              41.275940  543.036804 f
+  r4/t0/t0/s0/U380/Y (O2A1O1Ixp33_ASAP7_75t_R)        19.462585  562.499390 r
+  r4/t0/t0/s0/U381/Y (A2O1A1Ixp33_ASAP7_75t_R)        20.510315  583.009705 f
+  r4/t0/t0/s0/U382/Y (O2A1O1Ixp33_ASAP7_75t_R)        21.024780  604.034485 r
+  r4/t0/t0/s0/out_reg[2]/D (DFFHQNx1_ASAP7_75t_R)     0.000000   604.034485 r
+  data arrival time                                              604.034485
+
+  clock clk (rise edge)                               2000.000000
+                                                                 2000.000000
+  clock network delay (ideal)                         0.000000   2000.000000
+  r4/t0/t0/s0/out_reg[2]/CLK (DFFHQNx1_ASAP7_75t_R)   0.000000   2000.000000 r
+  library setup time                                  -18.271755 1981.728271
+  data required time                                             1981.728271
+  --------------------------------------------------------------------------
+  data required time                                             1981.728271
+  data arrival time                                              -604.034485
+  --------------------------------------------------------------------------
+  slack (MET)                                                    1377.693848
+
+
+1

@@ -1,0 +1,47 @@
+ 
+****************************************
+Report : area
+Design : aes_128
+Version: W-2024.09-SP3
+Date   : Tue Jan 20 06:08:46 2026
+****************************************
+
+Library(s) Used:
+
+    asap7sc7p5t_SEQ_RVT_TT_nldm_220123 (File: /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SEQ_RVT_TT_nldm_220123.db)
+    asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120 (File: /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.db)
+    asap7sc7p5t_OA_RVT_TT_nldm_211120 (File: /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_OA_RVT_TT_nldm_211120.db)
+    asap7sc7p5t_AO_RVT_TT_nldm_211120 (File: /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_AO_RVT_TT_nldm_211120.db)
+    asap7sc7p5t_INVBUF_RVT_TT_nldm_211120 (File: /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_INVBUF_RVT_TT_nldm_220122.db)
+
+Number of ports:                          386
+Number of nets:                        149984
+Number of cells:                       149856
+Number of combinational cells:         143004
+Number of sequential cells:              6852
+Number of macros/black boxes:               0
+Number of buf/inv:                      31290
+Number of references:                      34
+
+Combinational area:              10212.036168
+Buf/Inv area:                     1370.724138
+Noncombinational area:            1998.043124
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                 12210.079292
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area            Local cell area
+                                  -------------------  ----------------------------- 
+Hierarchical cell                 Absolute    Percent  Combi-      Noncombi-  Black-
+                                  Total       Total    national    national   boxes   Design
+--------------------------------  ----------  -------  ----------  ---------  ------  ---------
+aes_128                           12210.0793    100.0  10212.0362  1998.0431  0.0000  aes_128
+--------------------------------  ----------  -------  ----------  ---------  ------  ---------
+Total                                                  10212.0362  1998.0431  0.0000
+
+1

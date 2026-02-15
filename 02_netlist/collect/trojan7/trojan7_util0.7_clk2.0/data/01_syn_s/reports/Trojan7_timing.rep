@@ -1,0 +1,35 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Trojan7
+Version: W-2024.09-SP3
+Date   : Sat Feb 14 08:50:11 2026
+****************************************
+
+Operating Conditions: PVT_0P7V_25C   Library: asap7sc7p5t_AO_RVT_TT_nldm_211120
+Wire Load Model Mode: top
+
+  Startpoint: wb_data_i[2]
+              (input port)
+  Endpoint: slv_sel[3] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  input external delay                 0.000000   0.000000 f
+  wb_data_i[2] (in)                    0.000000   0.000000 f
+  U31/Y (NOR4xp25_ASAP7_75t_R)         24.310293  24.310293 r
+  U35/Y (AND4x1_ASAP7_75t_R)           33.609100  57.919395 r
+  U46/Y (NAND4xp25_ASAP7_75t_R)        51.169533  109.088928 f
+  U50/SN (HAxp5_ASAP7_75t_R)           35.671097  144.760025 f
+  slv_sel[3] (out)                     0.000000   144.760025 f
+  data arrival time                               144.760025
+  -----------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

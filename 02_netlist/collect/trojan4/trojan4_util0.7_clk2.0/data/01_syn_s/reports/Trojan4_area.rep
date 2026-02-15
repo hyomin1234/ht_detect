@@ -1,0 +1,46 @@
+ 
+****************************************
+Report : area
+Design : Trojan4
+Version: W-2024.09-SP3
+Date   : Sat Feb 14 08:44:29 2026
+****************************************
+
+Library(s) Used:
+
+    asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120 (File: /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.db)
+    asap7sc7p5t_AO_RVT_TT_nldm_211120 (File: /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_AO_RVT_TT_nldm_211120.db)
+    asap7sc7p5t_INVBUF_RVT_TT_nldm_211120 (File: /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_INVBUF_RVT_TT_nldm_220122.db)
+    asap7sc7p5t_SEQ_RVT_TT_nldm_220123 (File: /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SEQ_RVT_TT_nldm_220123.db)
+
+Number of ports:                          130
+Number of nets:                           284
+Number of cells:                          218
+Number of combinational cells:            138
+Number of sequential cells:                80
+Number of macros/black boxes:               0
+Number of buf/inv:                         71
+Number of references:                       8
+
+Combinational area:                 11.838960
+Buf/Inv area:                        3.105540
+Noncombinational area:              30.326400
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                    42.165360
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+Trojan4                             42.1654    100.0   11.8390    30.3264  0.0000  Trojan4
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+Total                                                  11.8390    30.3264  0.0000
+
+1

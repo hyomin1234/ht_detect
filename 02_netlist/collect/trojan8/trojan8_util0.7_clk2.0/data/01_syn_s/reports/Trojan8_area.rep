@@ -1,0 +1,46 @@
+ 
+****************************************
+Report : area
+Design : Trojan8
+Version: W-2024.09-SP3
+Date   : Sat Feb 14 08:52:08 2026
+****************************************
+
+Library(s) Used:
+
+    asap7sc7p5t_AO_RVT_TT_nldm_211120 (File: /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_AO_RVT_TT_nldm_211120.db)
+    asap7sc7p5t_OA_RVT_TT_nldm_211120 (File: /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_OA_RVT_TT_nldm_211120.db)
+    asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120 (File: /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.db)
+    asap7sc7p5t_INVBUF_RVT_TT_nldm_211120 (File: /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_INVBUF_RVT_TT_nldm_220122.db)
+
+Number of ports:                           59
+Number of nets:                          1384
+Number of cells:                         1079
+Number of combinational cells:           1079
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                        239
+Number of references:                      31
+
+Combinational area:                114.744599
+Buf/Inv area:                       10.453860
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                   114.744599
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area          Local cell area
+                                  ------------------  --------------------------- 
+Hierarchical cell                 Absolute   Percent  Combi-    Noncombi-  Black-
+                                  Total      Total    national  national   boxes   Design
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+Trojan8                            114.7446    100.0  114.7446     0.0000  0.0000  Trojan8
+--------------------------------  ---------  -------  --------  ---------  ------  ---------
+Total                                                 114.7446     0.0000  0.0000
+
+1

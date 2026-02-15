@@ -1,0 +1,62 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Trojan9
+Version: W-2024.09-SP3
+Date   : Sat Feb 14 08:54:04 2026
+****************************************
+
+Operating Conditions: PVT_0P7V_25C   Library: asap7sc7p5t_AO_RVT_TT_nldm_211120
+Wire Load Model Mode: top
+
+  Startpoint: a[1] (input port)
+  Endpoint: y[15] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                0.000000   0.000000 f
+  a[1] (in)                                           0.000000   0.000000 f
+  U234/Y (INVxp33_ASAP7_75t_R)                        60.893478  60.893478 r
+  DP_OP_14J1_123_1259/U717/SN (FAx1_ASAP7_75t_R)      174.034714 234.928192 r
+  U123/Y (INVxp33_ASAP7_75t_R)                        114.613434 349.541626 f
+  U128/Y (AOI22xp33_ASAP7_75t_R)                      76.326324  425.867950 r
+  U129/Y (INVxp33_ASAP7_75t_R)                        60.610413  486.478363 f
+  U130/Y (OAI221xp5_ASAP7_75t_R)                      45.325531  531.803894 r
+  U295/Y (INVxp33_ASAP7_75t_R)                        51.299438  583.103333 f
+  U415/Y (AOI22xp33_ASAP7_75t_R)                      33.641541  616.744873 r
+  U418/Y (NOR2xp33_ASAP7_75t_R)                       40.935730  657.680603 f
+  U419/Y (AOI21xp33_ASAP7_75t_R)                      41.185852  698.866455 r
+  DP_OP_14J1_123_1259/U453/CON (FAx1_ASAP7_75t_R)     35.295410  734.161865 f
+  DP_OP_14J1_123_1259/U447/CON (FAx1_ASAP7_75t_R)     26.544617  760.706482 r
+  U358/Y (INVxp33_ASAP7_75t_R)                        33.625244  794.331726 f
+  DP_OP_14J1_123_1259/U443/CON (FAx1_ASAP7_75t_R)     25.957336  820.289062 r
+  U322/Y (INVxp33_ASAP7_75t_R)                        33.916626  854.205688 f
+  DP_OP_14J1_123_1259/U439/CON (FAx1_ASAP7_75t_R)     38.892151  893.097839 r
+  DP_OP_14J1_123_1259/U438/CON (FAx1_ASAP7_75t_R)     22.128601  915.226440 f
+  U95/Y (INVxp33_ASAP7_75t_R)                         32.678650  947.905090 r
+  DP_OP_14J1_123_1259/U435/CON (FAx1_ASAP7_75t_R)     31.244202  979.149292 f
+  DP_OP_14J1_123_1259/U429/CON (FAx1_ASAP7_75t_R)     36.312683  1015.461975 r
+  DP_OP_14J1_123_1259/U428/CON (FAx1_ASAP7_75t_R)     32.695129  1048.157104 f
+  DP_OP_14J1_123_1259/U422/CON (FAx1_ASAP7_75t_R)     36.130371  1084.287476 r
+  DP_OP_14J1_123_1259/U421/CON (FAx1_ASAP7_75t_R)     23.117188  1107.404663 f
+  U94/Y (INVxp33_ASAP7_75t_R)                         30.932983  1138.337646 r
+  DP_OP_14J1_123_1259/U418/CON (FAx1_ASAP7_75t_R)     21.948242  1160.285889 f
+  U93/Y (INVxp33_ASAP7_75t_R)                         31.563354  1191.849243 r
+  DP_OP_14J1_123_1259/U415/CON (FAx1_ASAP7_75t_R)     34.194946  1226.044189 f
+  U475/SN (FAx1_ASAP7_75t_R)                          64.975220  1291.019409 f
+  U476/SN (FAx1_ASAP7_75t_R)                          55.901245  1346.920654 f
+  U477/Y (A2O1A1Ixp33_ASAP7_75t_R)                    23.569946  1370.490601 r
+  U478/Y (A2O1A1Ixp33_ASAP7_75t_R)                    21.007812  1391.498413 f
+  U479/Y (OAI21xp33_ASAP7_75t_R)                      13.953979  1405.452393 r
+  y[15] (out)                                         0.000000   1405.452393 r
+  data arrival time                                              1405.452393
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

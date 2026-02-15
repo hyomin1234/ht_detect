@@ -1,0 +1,56 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : Trojan6
+Version: W-2024.09-SP3
+Date   : Sat Feb 14 08:48:17 2026
+****************************************
+
+
+Library(s) Used:
+
+    asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120 (File: /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.db)
+
+
+Operating Conditions: PVT_0P7V_25C   Library: asap7sc7p5t_AO_RVT_TT_nldm_211120
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 0.7  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ps
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  = 176.972824 uW   (81%)
+  Net Switching Power  = 41.479263 uW   (19%)
+                         ---------
+Total Dynamic Power    = 218.452087 uW  (100%)
+
+Cell Leakage Power     = 664.0367 pW
+
+Information: report_power power group summary does not include estimated clock tree power. (PWR-789)
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad           0.000000          0.000000          0.000000          0.000000  (   0.00%)
+memory           0.000000          0.000000          0.000000          0.000000  (   0.00%)
+black_box        0.000000          0.000000          0.000000          0.000000  (   0.00%)
+clock_network    0.000000          0.000000          0.000000          0.000000  (   0.00%)  i
+register         0.000000          0.000000          0.000000          0.000000  (   0.00%)
+sequential       0.000000          0.000000          0.000000          0.000000  (   0.00%)
+combinational    0.176973        4.147926e-02        664.036743          0.218453
+                                                                                 ( 100.00%)
+--------------------------------------------------------------------------------------------------
+Total            0.176973 mW     4.147926e-02 mW     664.036743 pW       0.218453 mW
+1

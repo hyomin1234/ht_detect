@@ -1,0 +1,76 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : Trojan8
+Version: W-2024.09-SP3
+Date   : Sat Feb 14 08:52:08 2026
+****************************************
+
+Operating Conditions: PVT_0P7V_25C   Library: asap7sc7p5t_AO_RVT_TT_nldm_211120
+Wire Load Model Mode: top
+
+  Startpoint: a[1] (input port)
+  Endpoint: y[15] (output port)
+  Path Group: (none)
+  Path Type: max
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  input external delay                                0.000000   0.000000 f
+  a[1] (in)                                           0.000000   0.000000 f
+  U261/Y (INVxp33_ASAP7_75t_R)                        130.906693 130.906693 r
+  DP_OP_34J1_122_1718/U1293/SN (FAx1_ASAP7_75t_R)     310.658142 441.564819 f
+  U332/Y (INVxp33_ASAP7_75t_R)                        183.395630 624.960449 r
+  U493/Y (OAI22xp33_ASAP7_75t_R)                      81.650818  706.611267 f
+  U568/Y (INVxp33_ASAP7_75t_R)                        66.004944  772.616211 r
+  U761/Y (AOI21xp33_ASAP7_75t_R)                      29.779602  802.395813 f
+  U764/Y (NOR2xp33_ASAP7_75t_R)                       40.734985  843.130798 r
+  DP_OP_34J1_122_1718/U829/SN (FAx1_ASAP7_75t_R)      68.537720  911.668518 f
+  DP_OP_34J1_122_1718/U768/CON (FAx1_ASAP7_75t_R)     28.677002  940.345520 r
+  U682/Y (INVxp33_ASAP7_75t_R)                        34.896667  975.242188 f
+  DP_OP_34J1_122_1718/U764/CON (FAx1_ASAP7_75t_R)     26.083252  1001.325439 r
+  U622/Y (INVxp33_ASAP7_75t_R)                        33.979126  1035.304565 f
+  DP_OP_34J1_122_1718/U760/SN (FAx1_ASAP7_75t_R)      80.031738  1115.336304 f
+  DP_OP_34J1_122_1718/U196/CON (FAx1_ASAP7_75t_R)     45.096191  1160.432495 r
+  DP_OP_34J1_122_1718/U190/SN (FAx1_ASAP7_75t_R)      57.078125  1217.510620 f
+  U535/SN (HAxp5_ASAP7_75t_R)                         67.079956  1284.590576 f
+  DP_OP_34J1_122_1718/U31/CON (FAx1_ASAP7_75t_R)      41.867554  1326.458130 r
+  DP_OP_34J1_122_1718/U31/SN (FAx1_ASAP7_75t_R)       23.745728  1350.203857 f
+  U537/SN (HAxp5_ASAP7_75t_R)                         63.787842  1413.991699 f
+  DP_OP_35J1_123_4129/U240/CON (FAx1_ASAP7_75t_R)     35.003052  1448.994751 r
+  DP_OP_35J1_123_4129/U240/SN (FAx1_ASAP7_75t_R)      23.137329  1472.132080 f
+  U256/Y (INVxp33_ASAP7_75t_R)                        47.396484  1519.528564 r
+  U548/Y (AOI22xp33_ASAP7_75t_R)                      22.188965  1541.717529 f
+  U549/Y (OAI21xp33_ASAP7_75t_R)                      24.608643  1566.326172 r
+  DP_OP_35J1_123_4129/U97/SN (FAx1_ASAP7_75t_R)       75.057861  1641.384033 f
+  DP_OP_35J1_123_4129/U44/CON (FAx1_ASAP7_75t_R)      27.792236  1669.176270 r
+  U248/Y (INVxp33_ASAP7_75t_R)                        29.902344  1699.078613 f
+  DP_OP_35J1_123_4129/U40/CON (FAx1_ASAP7_75t_R)      24.726562  1723.805176 r
+  U247/Y (INVxp33_ASAP7_75t_R)                        29.902344  1753.707520 f
+  DP_OP_35J1_123_4129/U36/CON (FAx1_ASAP7_75t_R)      24.726562  1778.434082 r
+  U246/Y (INVxp33_ASAP7_75t_R)                        29.902344  1808.336426 f
+  DP_OP_35J1_123_4129/U32/CON (FAx1_ASAP7_75t_R)      24.726562  1833.062988 r
+  U245/Y (INVxp33_ASAP7_75t_R)                        29.902344  1862.965332 f
+  DP_OP_35J1_123_4129/U28/CON (FAx1_ASAP7_75t_R)      24.726562  1887.691895 r
+  U244/Y (INVxp33_ASAP7_75t_R)                        29.902344  1917.594238 f
+  DP_OP_35J1_123_4129/U24/CON (FAx1_ASAP7_75t_R)      24.726562  1942.320801 r
+  U243/Y (INVxp33_ASAP7_75t_R)                        29.902344  1972.223145 f
+  DP_OP_35J1_123_4129/U20/CON (FAx1_ASAP7_75t_R)      24.726562  1996.949707 r
+  U242/Y (INVxp33_ASAP7_75t_R)                        29.902344  2026.852051 f
+  DP_OP_35J1_123_4129/U16/CON (FAx1_ASAP7_75t_R)      37.578613  2064.430664 r
+  U952/SN (FAx1_ASAP7_75t_R)                          56.645020  2121.075684 f
+  U953/Y (NAND3xp33_ASAP7_75t_R)                      20.647461  2141.723145 r
+  U954/Y (A2O1A1Ixp33_ASAP7_75t_R)                    23.537109  2165.260254 f
+  U957/Y (AOI21xp33_ASAP7_75t_R)                      21.239258  2186.499512 r
+  U965/Y (O2A1O1Ixp33_ASAP7_75t_R)                    17.387207  2203.886719 f
+  U966/Y (A2O1A1Ixp33_ASAP7_75t_R)                    9.783203   2213.669922 r
+  y[15] (out)                                         0.000000   2213.669922 r
+  data arrival time                                              2213.669922
+  --------------------------------------------------------------------------
+  (Path is unconstrained)
+
+
+1

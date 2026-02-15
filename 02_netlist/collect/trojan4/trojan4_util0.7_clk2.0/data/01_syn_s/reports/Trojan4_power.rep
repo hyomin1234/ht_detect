@@ -1,0 +1,60 @@
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : Trojan4
+Version: W-2024.09-SP3
+Date   : Sat Feb 14 08:44:29 2026
+****************************************
+
+
+Library(s) Used:
+
+    asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120 (File: /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SIMPLE_RVT_TT_nldm_211120.db)
+    asap7sc7p5t_AO_RVT_TT_nldm_211120 (File: /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_AO_RVT_TT_nldm_211120.db)
+    asap7sc7p5t_INVBUF_RVT_TT_nldm_211120 (File: /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_INVBUF_RVT_TT_nldm_220122.db)
+    asap7sc7p5t_SEQ_RVT_TT_nldm_220123 (File: /home/suwankim/students/hyomin/CAD/tech/asap7/db/asap7sc7p5t_SEQ_RVT_TT_nldm_220123.db)
+
+
+Operating Conditions: PVT_0P7V_25C   Library: asap7sc7p5t_AO_RVT_TT_nldm_211120
+Wire Load Model Mode: top
+
+
+Global Operating Voltage = 0.7  
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000ff
+    Time Units = 1ps
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1pW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  = 61.616726 uW   (96%)
+  Net Switching Power  = 2.840499 uW    (4%)
+                         ---------
+Total Dynamic Power    = 64.457230 uW  (100%)
+
+Cell Leakage Power     =  33.8007 nW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad           0.000000          0.000000          0.000000          0.000000  (   0.00%)
+memory           0.000000          0.000000          0.000000          0.000000  (   0.00%)
+black_box        0.000000          0.000000          0.000000          0.000000  (   0.00%)
+clock_network  4.872792e-02          0.000000          0.000000        4.872792e-02
+                                                                                 (  75.56%)  i
+register       1.043103e-02        1.441601e-03        2.363611e+04        1.189628e-02
+                                                                                 (  18.45%)
+sequential       0.000000          0.000000          0.000000          0.000000  (   0.00%)
+combinational  2.457779e-03        1.398898e-03        1.016376e+04        3.866841e-03
+                                                                                 (   6.00%)
+--------------------------------------------------------------------------------------------------
+Total          6.161673e-02 mW     2.840499e-03 mW     3.379986e+04 pW     6.449104e-02 mW
+1
