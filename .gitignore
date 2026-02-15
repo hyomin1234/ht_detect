@@ -96,7 +96,10 @@ dmypy.json
 
 # Large Data Folders (Optional - Uncomment if you want to ignore them)
 00_contest/
+00_paper/
 01_train_dataset_RTL/
 # 02_netlist/
 03_graph_pt/
 results/
+inc_design/
+tcl_script/
